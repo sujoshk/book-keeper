@@ -1,7 +1,7 @@
 /* Extremely important to get into the practice of using variables for css properties. Makes it easier to change themes and helps while scaling up apps too */
 
 :root {
-  --primary-color: rgb(41, 40, 39);
+  --primary-color: rgb(3, 51, 5);
   --border-radius: 55px;
 }
 
@@ -108,12 +108,19 @@ a:active {
 
 .modal {
   background: white;
+
+  /* vertical horizontal thickness color and opacity  */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+
+  /* This is to ensure that it looks good on mobile devices */
   max-width: 95%;
+
+  /* This is to make sure it doesn't exceed 500px on dekstops.  */
   width: 500px;
-  animation: modalopen 1s;
+  animation: modalopen 2s;
 }
 
+/* This is to build the animation that we have used in the previous line */
 @keyframes modalopen {
   from {
     opacity: 0;
